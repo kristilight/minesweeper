@@ -10,10 +10,10 @@ body {
   row-gap: 20px;
   flex-wrap: wrap;
   background-color: #edc5fd;
-  border: 10px solid #270f34;
+  border: 7px solid #270f34;
   padding: 10px 50px;
   max-width: 650px;
-  border-radius: 100px;
+  border-radius: 35px;
   box-sizing: border-box;
 }
 
