@@ -7,11 +7,11 @@ const container = createElement('div', '', 'container');
 
 const textContainer = createElement('div', '', 'texts-container');
 let clickedContainer = createElement('div', '', 'text-content');
-const clickedText = createElement('span', 'Количество кликов :', 'text');
+const clickedText = createElement('span', 'Number of clicks :', 'text');
 const clickedAmountText = createElement('span', '10', 'text');
 
 let stopwatchContainer = createElement('div', '', 'text-content');
-const stopwatchText = createElement('span', 'Секудомер :', 'text');
+const stopwatchText = createElement('span', 'Stopwatch:', 'text');
 const stopwatchAmountText = createElement('span', '00 : 00', 'text');
 
 let flagContainer = createElement('div', '', 'text-content');
@@ -29,19 +29,19 @@ minesAmountText.max = '99';
 
 const btnNewMines = createElement('button', 'set mines', 'btn-new-mines');
 
-const resultBTN = createElement('button', 'Результаты', 'btn-result');
+const resultBTN = createElement('button', 'Results', 'btn-result');
 const resultContainer = createElement('div', '', 'result');
 const resultTextAmount = createElement('span', '', 'text-result');
 const resultCross = createElement('div', '❌', 'cross-result');
 
 const soundContainer = createElement('div', '', 'text-content', 'sound');
-const soundText = createElement('p', 'Звук:', 'text');
+const soundText = createElement('p', 'Sound:', 'text');
 const soundSwitch = createElement('button', 'off', 'btn-text', 'sound-btn');
 
 const themeContainer = createElement('div', '', 'just-container');
-const chooseThemeText = createElement('span', 'Выбор темы :', 'text');
-const lightTeam = createElement('button', 'Светлая', 'btn-team__text');
-const darkTeam = createElement('button', 'Тёмная', 'btn-team__text');
+const chooseThemeText = createElement('span', 'Theme :', 'text');
+const lightTeam = createElement('button', 'Light', 'btn-team__text');
+const darkTeam = createElement('button', 'Dark', 'btn-team__text');
 
 const header = createElement('div', '', 'header');
 const btnNewGame = createElement('button', 'New game', 'btn-new-game');
