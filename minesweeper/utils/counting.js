@@ -53,9 +53,9 @@ function create(initialAmount) {
 const gameOver = create(false);
 const soundOff = create(false);
 
-const gameData = {
-  field: [],
-  minesArr: []
-};
 
-export {mines, level, rows, columns, gameData, timerID, gameOver, countFlag, numberClicks, cellsClicked, soundOff, newMines};
+let field =  [];
+let minesArr = []
+
+
+export {mines, level, rows, columns, field, minesArr, timerID, gameOver, countFlag, numberClicks, cellsClicked, soundOff, newMines};

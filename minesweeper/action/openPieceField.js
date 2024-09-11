@@ -1,8 +1,6 @@
-import {cellsClicked, columns, gameData, gameOver, mines, rows} from "../utils/counting.js";
+import {cellsClicked, columns, field, gameOver, mines, rows} from "../utils/counting.js";
 import {countFoundMines} from "./interactCells.js";
 import winGame from "./winGame.js";
-
-let { field } = gameData;
 
 function openPieceField(row, column) {
   if (row < 0 || row >= rows.count || column < 0 || column >= columns.count) {

@@ -1,12 +1,11 @@
 import {
   columns,
   mines,
-  gameData,
   rows,
   gameOver,
   numberClicks,
   cellsClicked,
-  timerID
+  timerID, field, minesArr
 } from "../utils/counting.js";
 import {clickedAmountText} from "../create-ui/elements.js";
 import endGame from "./endGame.js";
@@ -14,7 +13,6 @@ import openPieceField from "./openPieceField.js";
 import timer from "./timer.js";
 
 let DELIMETER = ":";
-let { field, minesArr } = gameData;
 
 function generateMines(cell) {
   for (let i = 0; i < mines.count; i++) {

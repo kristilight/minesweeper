@@ -1,15 +1,13 @@
-import {countFlag, gameData, numberClicks, cellsClicked, gameOver, mines} from "../utils/counting.js";
+import {countFlag, field, minesArr, numberClicks, cellsClicked, gameOver, mines} from "../utils/counting.js";
 import {clickedAmountText, container, modal} from "../create-ui/elements.js";
 import {stopTimer} from "./timer.js";
-
-let { field, minesArr } = gameData;
 
 function restartMinesweeper() {
   let minesweeperQuery = document.querySelector('.minesweeper');
   countFlag.count = mines.count ;
   container.removeChild(minesweeperQuery);
-  field = [];
-  minesArr = [];
+  field.length = 0;
+  minesArr.length = 0;
   numberClicks.count  = 0;
   cellsClicked.count  = 0;
   gameOver.mean = false;

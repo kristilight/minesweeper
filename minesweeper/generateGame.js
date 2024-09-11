@@ -2,10 +2,11 @@ import createElement from "./create-ui/createElement.js";
 import {container} from "./create-ui/elements.js";
 import {
   columns,
-  gameData,
+  field, minesArr,
   gameOver,
   level,
-  rows, soundOff, mines, newMines,
+  rows,
+  soundOff
 } from "./utils/counting.js";
 import {clickCell} from "./action/interactCells.js";
 import setFlag from "./action/setFlag.js";
@@ -13,7 +14,6 @@ import setFlag from "./action/setFlag.js";
 let audioClick = new Audio('audio/effect.mp3');
 let audioBombClick = new Audio('audio/classic_hurt.mp3');
 let DELIMETER = ":";
-let { field, minesArr } = gameData;
 
 function generateGame() {
   const minesweeper = createElement('div', '', 'minesweeper');

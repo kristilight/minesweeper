@@ -21,11 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
   btnNewGame.addEventListener('click', () => {
     restartMinesweeper();
     generateGame();
+
     if (level.result === 'easy' || level.result === '') {
       newMines.count = 10;
       mines.count = 10;
     }
-    if (level.result) {
+    if (level.result === 'medium') {
       newMines.count = 35;
       mines.count = 35;
     }
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   easyLevel.addEventListener('click', () => {
     restartMinesweeper();
-    level.result(1);
+    level.result = 1;
     rows.count = 10;
     columns.count = 10;
     mines.count = 10;
@@ -50,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   middleLevel.addEventListener('click', () => {
     restartMinesweeper();
-    level.result(2);
+    level.result = 2;
     rows.count = 15;
     columns.count = 15;
     mines.count= 35;
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   hardLevel.addEventListener('click', () => {
     restartMinesweeper();
-    level.result(3);
+    level.result = 3;
     rows.count = 25;
     columns.count = 25;
     mines.count = 85;
