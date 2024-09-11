@@ -1,9 +1,9 @@
-import {timerId} from "../utils/counting.js";
+import {timerID} from "../utils/counting.js";
 import {stopwatchAmountText} from "../create-ui/elements.js";
 
 export default function timer() {
   let time = 0;
-  timerId = setInterval(() => {
+  timerID.count = setInterval(() => {
     time += 1;
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
@@ -22,7 +22,7 @@ export default function timer() {
 }
 
 export function stopTimer() {
-  clearInterval(timerId);
+  clearInterval(timerID.count);
   stopwatchAmountText.innerHTML = `00 : 00`;
 }
 

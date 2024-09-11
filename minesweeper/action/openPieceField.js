@@ -1,9 +1,8 @@
-import {columns, field, gameOver, mines, rows} from "../utils/counting.js";
+import {cellsClicked, columns, gameData, gameOver, mines, rows} from "../utils/counting.js";
 import {countFoundMines} from "./interactCells.js";
 import winGame from "./winGame.js";
 
-let cellsClicked = 0;
-
+let { field } = gameData;
 
 function openPieceField(row, column) {
   if (row < 0 || row >= rows.count || column < 0 || column >= columns.count) {
@@ -15,7 +14,7 @@ function openPieceField(row, column) {
   if (field[row][column].innerText !== '🔺') {
     field[row][column].classList.add("clicked");
   }
-  cellsClicked += 1;
+  cellsClicked.count += 1;
 
   let countMines = countFoundMines(row, column);
   if (countMines > 0) {
@@ -37,7 +36,7 @@ function openPieceField(row, column) {
     }
   }
 
-  if (cellsClicked === rows.count * columns.count - mines.count && !gameOver) {
+  if (cellsClicked.amount === rows.count * columns.count - mines.count && !gameOver.mean) {
     winGame();
   }
 

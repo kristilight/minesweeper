@@ -1,13 +1,13 @@
 import {soundSwitch} from "../create-ui/elements.js";
-import {soundOffChoose} from "../utils/counting.js";
+import {soundOff} from "../utils/counting.js";
 
 function soundClick() {
   if (soundSwitch.innerHTML === 'off') {
     soundSwitch.innerHTML = 'on';
-    soundOffChoose = true;
+    soundOff.mean = true;
   } else {
     soundSwitch.innerHTML = 'off';
-    soundOffChoose = false;
+    soundOff.mean = false;
   }
 }
 

@@ -1,4 +1,5 @@
 import createElement from "./createElement.js";
+import {mines, numberClicks} from "../utils/counting.js";
 
 const {body} = document;
 
@@ -8,7 +9,7 @@ const container = createElement('div', '', 'container');
 const textContainer = createElement('div', '', 'texts-container');
 let clickedContainer = createElement('div', '', 'text-content');
 const clickedText = createElement('span', 'Number of clicks :', 'text');
-const clickedAmountText = createElement('span', '10', 'text');
+const clickedAmountText = createElement('span', numberClicks.count, 'text');
 
 let stopwatchContainer = createElement('div', '', 'text-content');
 const stopwatchText = createElement('span', 'Stopwatch:', 'text');
@@ -16,7 +17,7 @@ const stopwatchAmountText = createElement('span', '00 : 00', 'text');
 
 let flagContainer = createElement('div', '', 'text-content');
 const flagText = createElement('span', '🔺 :', 'text');
-const flagAmountText = createElement('span', '10', 'text');
+const flagAmountText = createElement('span', mines.count, 'text');
 
 let minesContainer = createElement('div', '', 'text-content');
 const minesText = createElement('span', '💣 :', 'text');

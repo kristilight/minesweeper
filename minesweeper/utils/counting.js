@@ -11,13 +11,14 @@ function createCounter(initialAmount) {
   };
 }
 
-const mines = createCounter(1);
+const mines = createCounter(10);
 const rows = createCounter(10);
 const columns = createCounter(10);
 const countFlag = createCounter(10);
 const newMines = createCounter(10);
 const numberClicks = createCounter(0);
 const cellsClicked = createCounter(0);
+const timerID = createCounter(0)
 
 const level = {
   level: '',
@@ -36,10 +37,25 @@ const level = {
   },
 };
 
-let field = [];
-let minesArr = [];
-let gameOver = false;
-let soundOffChoose = false;
-let timerId;
+function create(initialAmount) {
+  return {
+    amount: initialAmount,
 
-export {mines, level, rows, columns, field, minesArr, timerId, gameOver, countFlag, numberClicks, cellsClicked, soundOffChoose, newMines};
+    get mean() {
+      return this.amount;
+    },
+    set mean(value) {
+      this.amount = value;
+    },
+  };
+}
+
+const gameOver = create(false);
+const soundOff = create(false);
+
+const gameData = {
+  field: [],
+  minesArr: []
+};
+
+export {mines, level, rows, columns, gameData, timerID, gameOver, countFlag, numberClicks, cellsClicked, soundOff, newMines};

@@ -6,13 +6,13 @@ import {
   lightTeam, middleLevel,
   minesAmountText, modal,
   modalCross, resultBTN, resultContainer, resultCross, soundSwitch
-} from "../create-ui/elements";
-import soundClick from "./soundClick";
-import themeClick from "../create-ui/theme";
-import generateGame from "../generateGame";
-import {columns, level, mines, newMines, rows} from "../utils/counting";
-import specialGame from "./specialGame";
-import restartMinesweeper from "./restartMinesweeper";
+} from "../create-ui/elements.js";
+import soundClick from "./soundClick.js";
+import themeClick from "../create-ui/theme.js";
+import generateGame from "../generateGame.js";
+import {columns, level, mines, newMines, rows} from "../utils/counting.js";
+import specialGame from "./specialGame.js";
+import restartMinesweeper from "./restartMinesweeper.js";
 
 let chooseTheme = '';
 

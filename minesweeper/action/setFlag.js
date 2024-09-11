@@ -2,7 +2,7 @@ import {flagAmountText} from "../create-ui/elements.js";
 import {countFlag} from "../utils/counting.js";
 
 function setFlag(cell) {
-  flagAmountText.innerHTML = countFlag;
+  flagAmountText.innerHTML = countFlag.count;
   if (cell.innerText === '🔺') {
     cell.innerText = '';
     countFlag.count += 1;
@@ -10,7 +10,7 @@ function setFlag(cell) {
     cell.innerText = '🔺';
     countFlag.count -= 1;
   }
-  flagAmountText.innerHTML = countFlag;
+  flagAmountText.innerHTML = countFlag.count;
 }
 
 export default setFlag;
