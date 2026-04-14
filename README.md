@@ -1,5 +1,5 @@
 # minesweeper
-[Deploy](https://crystal-twinkle.github.io/minesweeper/minesweeper/)
+[Deploy](https://kristilight.github.io/minesweeper/)
 
 ### Tech stack:
 - the default size of the frame is 10x10 with 10 mines.
