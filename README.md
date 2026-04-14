@@ -1,5 +1,5 @@
 # minesweeper
-[Deploy](https://kristilight.github.io/minesweeper/)
+[Deploy](https://kristilight.github.io/minesweeper/minesweeper)
 
 ### Tech stack:
 - the default size of the frame is 10x10 with 10 mines.
